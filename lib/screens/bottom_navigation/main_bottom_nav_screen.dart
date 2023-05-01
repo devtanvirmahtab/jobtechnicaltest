@@ -70,8 +70,11 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
             )
           ]
         ),
-        child: Row(
-          children: navBarItemList,
+        child: Container(
+          color: Colors.white,
+          child: Row(
+            children: navBarItemList,
+          ),
         ),
       )
     );
@@ -85,11 +88,11 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
               controller.barControl(index);
             },
             child: Container(
-
               padding: const EdgeInsets.all(15),
               height: 60,
               width: MediaQuery.of(context).size.width/_iconList.length,
               decoration: bController.selectedIndex == index ? const BoxDecoration(
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight:Radius.circular(10) ),
                   color:  primaryColor
               ): const BoxDecoration(
                   color:  Colors.white

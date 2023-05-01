@@ -25,7 +25,7 @@ class _HorizontalDateViewState extends State<HorizontalDateView> {
     currentMonthList.sort((a, b) => a.day.compareTo(b.day));
     currentMonthList = currentMonthList.toSet().toList();
     scrollController =
-        ScrollController(initialScrollOffset: 70.0 * currentDateTime.day);
+        ScrollController(initialScrollOffset: 1.0 * currentDateTime.day);
     super.initState();
   }
 

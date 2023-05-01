@@ -12,7 +12,11 @@ class _SelectedItemScreenState extends State<SelectedItemScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-
+          children: [
+            Center(
+              child: Text("Details Page"),
+            )
+          ],
       ),
     );
   }
